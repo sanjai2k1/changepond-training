@@ -82,3 +82,77 @@ By using DOm to set,get value from element.
 
 *Date and its method
 -if you want to get date and time in web page b using javascript 
+
+
+----------------------------------------------------------------
+11/6/2024
+
+
+
+*exonentiation operator : it will return power of any number
+== : it check only value if values are same then it return true result.
+=== : it check both value as well as its datatype if both are same hen and only then it return true value.
+
+
+ex : 5==5 =>true
+     '5'==5 =>true
+     5===5 =>true
+     '5'=== 5 =>false
+
+*Hoisting : it is Javascrit default behavior which moves variable and function declarartion at top of page .means we can use variable declaraion of it.
+
+
+*difference between var,let,const
+
+var :
+-it support hoisting concept
+-we can se variable before declaraion of it
+-we can redeclare-it
+
+let:
+-it do not support hoisting concept.
+-we can not use variable before declaraton of it.
+-we can not redeclare it.
+
+const :
+-it is use to create variable with constant value.
+-when we declare constant variable at same time we have to initialize it.
+-const variabe value will never change on run time.
+
+*Math method : it is use to perform mathematical operation
+Math.ceil(),Math.floor(),Math.round(),Math.random()
+
+
+String and its method
+-it is collection of character.
+-in string every letter has index number.
+-character index from zero index.
+-in string blank space is also consider as string
+
+*how to find index of searching string
+1.indexOf("search-String",index?): 
+- it will return index of first occurenses of search string.
+-it will search string in from left to right direction.
+-if searching s not found then it return -1 result.
+2.lastIndexOf:
+- it will return index of last occurenses of search string.
+-it will search string in from  right to left direction.
+-if searching s not found then it return -1 result.
+3.search:
+-fasater than indexof
+*how to find part of string from big string
+4.slice(start-index,end-index):
+-it will return partial part of string from index number.
+-slice method will search string from left to right where we pass positive index
+-slice method will search string from  right to left where we pass negative index
+5.subString:
+6.subStr(start-index,total-numberOf-character):
+it will return partial part of string from index number.
+-slice method will search string from left to right when we pass +ve index
+
+7.split(seperator): it is use to converting string data into array.
+
+
+8.replace("old text","new text");
+
+9.charAt(index): it return single available on index number
