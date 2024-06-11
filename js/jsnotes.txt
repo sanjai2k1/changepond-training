@@ -156,3 +156,35 @@ it will return partial part of string from index number.
 8.replace("old text","new text");
 
 9.charAt(index): it return single available on index number
+
+
+ES5(ECMA script5)2009:
+"use strict"
+-it executes javascript code in strict mode,in this we can not use variable before declaration of it.
+- it always write at starting of js code.
+
+2.trim():
+-it is used to remove unwanted white space from both side of string.
+
+-forEach
+-map
+-filter
+-every
+-some
+-reduce or reduceRight
+
+*prompt : it generate one popup window and allows usr to insert data in it.
+
+*external javascript
+-lname,password,mail,contactno,gender
+*Form Validation
+*perform form validation after submitting form
+-for this we use onsubmit event
+*perform form validation before submitting form
+-for this we use onblur event
+
+
+
+
+// 1.replace task 
+// 2. validation task
