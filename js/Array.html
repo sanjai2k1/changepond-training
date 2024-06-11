@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let courses = ["React","Angular","Java","Python"]
+        console.log(courses)
+        console.log("Array length",courses.length)
+        console.log("Array size",courses.length-1)
+
+        //how to access array data outside array
+        console.log(courses[1])
+        // how to manipulate array data
+        courses[2]="Advanced java"
+        console.log(courses)
+
+        for(let i=0;i<courses.length;i++){
+            document.write(courses[i],",")
+
+        }
+
+        //for of : it will return array values.
+        document.write("<br>")
+        for(let course of courses){
+            document.write(course,",")
+        }
+        document.write("<br>")
+        //for in : it will return array index
+        for(let course in courses){
+            document .write(course,",")
+        }
+
+        //1.push(): it allows us to insert data at last index of an array.
+        courses.push("Nodejs","Express Js")
+        document.write("<br>")
+        for(let course of courses){
+            document.write(course,",")
+        }
+
+        //2.pop() : it is used to remove values from last index of an array,it removes single value at a time
+
+        courses.pop()
+        document.write("<br>")
+        for(let course of courses){
+            document.write(course,",")
+        }
+
+        //3.unshift() : it allows us to insert values at starting index of an array.
+        document.write("<br>")
+        courses.unshift("Html","Css")
+        document.write(courses,"<br>")
+
+        //4.shift():it is used to remove values from  starting index of an array,it remove sngle value at
+
+        courses.shift();
+        document.write(courses,"<br>")
+
+        //5.splice(startIndexc)
+
+        courses.splice(3,0,"Saas","TypeScript") 
+        
+        // it will add  two values from index 4
+        document.write(courses,"<br")
+
+        courses.splice(4,2) // it will remove two values from 4 index
+        document.write(courses,"<br>")
+
+        courses.splice(2,1,"Wordpress","Digital Marketing") // it will remove one value from 2nd index and add two values 
+        document.write(courses,"<br>")
+
+
+        //6. toString(): it convert array data into String
+        console.log(courses.toString())
+
+        //7.join(): it convert array data into String data,it takes one parameter to seperate data
+        console.log(courses.join(" #"))
+
+    </script>
+</body>
+</html>

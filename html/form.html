@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Form</h2>
+    <form method="get">
+        <div>
+            <label for="fname">Ener your Full name:</label>
+            <input type="text" name="fname" id="fname" placeholder="enter your name" required minlength="3" maxlength="20" pattern="^[a-zA-Z]{3,20}$">
+        </div> <br>
+        <div>
+            <label for="upass">Enter your password:</label>
+            <input type="password" name="upass" id="upass" required>
+        </div> <br>
+        <div>
+            <label for="uemail">Enter your Email :</label>
+            <input type="email" name="uemail" id="uemail" required>
+        </div> <br>
+        <div>
+            <label for="contact">Enter your contact :</label>
+            <input type="tel" pattern="^[0-9]{9,11}$" name="contact" id="contact" required>
+        </div> <br>
+        <div>
+            <label for="dob">Select DOB : </label>
+            <input type="date" name="dob" id="dob" required>
+        </div> <br>
+        <div>
+            <label for="time">Select Time : </label>
+            <input type="time" name="time" id="time">
+        </div> <br>
+        <div>
+            <label for="age">Select Age :</label>
+            <input type="number" name="age" id="age" min="18" max="60" required>
+        </div> <br>
+        <div>
+            <label for="gender">Select your Gender : </label>
+            <input type="radio" name="gender" id="gender" value="male">Male
+            <input type="radio" name="gender" value="female" id="gender" value>Female
+            <input type="radio" name="gender" value="transgender" id="gender" value>Transgender
+        </div> <br>
+        <div>
+            <label for="edu">Select your Education : </label>
+            <input type="checkbox" name="edu" id="edu" value="ssc">SSC
+            <input type="checkbox" name="edu" id="edu" value="hsc">HSC
+            <input type="checkbox" name="edu" id="edu" value="ug">Ug
+            <input type="checkbox" name="edu" id="edu" value="pg">Pg
+            <input type="checkbox" name="edu" id="edu" value="master">Master
+        </div> <br>
+        <div>
+            <label for="course">Select your course : </label>
+            <select name="course" id="course">
+                <option value="">Select your course</option>
+                <option value="react">React</option>
+                <option value="angular">Angular</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+            </select>
+        </div> <br>
+        <button type="submit">submit</button>
+        <br> <br>
+        <button type="reset">reset</button>
+    </form>
+</body>
+
+</html>

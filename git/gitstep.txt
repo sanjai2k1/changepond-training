@@ -1,0 +1,9 @@
+step 1:creae remote repository 
+step 2:create folder and open in vs code editor and write code n it. 
+step 3:open terminal with option gitbash
+step 4:in terminal write 
+        git init
+step 5: configure remote repository with local
+step 6:commit code
+step 7: go to terminal and write
+    git push -u origin master

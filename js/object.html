@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //object data type
+        let person = {
+            id: 101, name: "Suresh", contact: 8888, single:true,address :{
+                city : "Chennai",
+                pin : 1234,
+                state : "TamilNadu"
+            },
+            details:function(){
+                return `Id : ${this.id} Name:${this.name} Contact : ${this.contact} Single : ${this.single} <br>`
+            }
+        }
+
+        document.write(`Id : ${person.id} Name : ${person.name} Contact : ${person.contact} single :${person.single} <br>`)
+        document.write(`City : ${person.address.city} Pin : ${person.address.pin} State : ${person.address.state} <br>`)
+
+        document.write(person.details())
+
+       
+
+        let emp =[
+        {id:1,name:"Suresh",salary:95000,gender:"male",address:"chennai"},
+        {id:2,name:"Basil",salary:95000,gender:"male",address:"Mumbai"},
+        {id:3,name:"Rahul",salary:95000,gender:"male",address:"nagpur"},
+        {id:4,name:"Madhav",salary:95000,gender:"male",address:"Delhi"},
+        {id:5,name:"Ratan",salary:95000,gender:"male",address:"Hyderabad"},
+        {id:6,name:"Raja",salary:95000,gender:"male",address:"banglore"},
+       ]
+
+
+       for(let i=0;i<emp.length;i++)
+       {
+        document.write(`Id : ${emp[i].id}, Name : ${emp[i].name} , Salary : ${emp[i].salary}, Gender : ${emp[i].gender}, Address : ${emp[i].address} <br>`)
+       }
+
+       document.write("=========================================<br>")
+       for (let e of emp ){
+            document.write(`Id : ${e.id}, Name : ${e.name} , Salary : ${e.salary}, Gender : ${e.gender}, Address : ${e.address} <br>`)
+        }
+
+    </script>
+</body>
+
+</html>

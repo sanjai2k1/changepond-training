@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="d1"></h1>
+    <h2 id="d2"></h2>
+    
+    <h2 id="d3">Good Morning Friends</h2>
+
+
+    <script>
+        //1.document.write()
+        document.write("Welcme you all in JS Session <br>")
+        document.write(100+400)
+
+        //2.window.alert()
+        // window.alert("How are you all")
+        // window.alert(1000-800)
+
+        //3.console.log()
+        console.log("Display output in browser ..")
+        console.log(5*5);
+
+        //4. DOM
+        document.getElementById("d1").innerHTML="My Name is Sanjai J"
+        document.getElementById("d2").innerHTML="I live in chennai"
+
+        // console.log(document.getElementById("d1"))
+        document.getElementById("d1").style.color="blue"
+        document.getElementById("d2").style.background="yellow"
+        
+        let data = document.getElementById("d3").innerHTML
+        console.log(data)
+    </script>
+</body>
+</html>

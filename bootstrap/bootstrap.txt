@@ -1,0 +1,64 @@
+7/6/2024
+
+
+
+
+Bootstrap: it is html,css and javascript framework.
+            -which is use to make web app attractive ,responsive and mobile friendl.
+            -it provide inbuilt classes.
+            -latest version of bootstrap is bootstrap5.
+
+*there are two ways to use bootstrap 
+1. By using CDN(Content Delievery Network) Link:
+2. By Downloading
+
+*official website boostrap is
+getbootstrap.com
+
+*How to copy and use CDN Link
+*heading classes: .display-1 to .display-6
+
+.container: it will apply 15px margin from left and right side of an element
+.container-fluid: it will take full width of screen.
+
+Note: above two classes use to wrap element or content.
+
+
+
+*color classes:
+.text-danger,text-warning,text-success
+.bg-danger,.bg-primary,.bg-warning
+
+
+*chaining of classes : we can write multiple classes together. 
+*Tables classes
+*Button Classes
+*spinner-border
+*spnner-grow
+
+.rounded,rounded-circle,.img-thumbnail
+
+
+*card classes
+
+*Bootstra Grid :
+- it is used to manage element layout according to different screen width.
+-in bootstrap grid we se two classes 1.row class,2.col class-ImpNote: in Botstrap grid in sngle row display multiple column with size 12 only.
+        -if column size is greater than 12 next column will start from new row.
+
+*how to use piece of code from website sample
+*use of carousel
+*use of header and footer
+
+*assignment on html,css,bootstrap
+
+create desgn jewelry website
+
+
+-pages,Hme,about,jwellery,Contact
+
+-1. website mst be attractive and responsive
+2. good quality images
+3.use semantic element
+
+=================================================================================================================
