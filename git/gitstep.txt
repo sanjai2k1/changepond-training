@@ -7,3 +7,38 @@ step 5: configure remote repository with local
 step 6:commit code
 step 7: go to terminal and write
     git push -u origin master
+---------------------------------------------------------
+
+11/6/2024
+
+
+
+*exonentiation operator : it will return power of any number
+== : it check only value if values are same then it return true result.
+=== : it check both value as well as its datatype if both are same hen and only then it return true value.
+
+
+ex : 5==5 =>true
+     '5'==5 =>true
+     5===5 =>true
+     '5'=== 5 =>false
+
+*Hoisting : it is Javascrit default behavior which moves variable and function declarartion at top of page .means we can use variable declaraion of it.
+
+
+*difference between var,let,const
+
+var :
+-it support hoisting concept
+-we can se variable before declaraion of it
+-we can redeclare-it
+
+let:
+-it do not support hoisting concept.
+-we can not use variable before declaraton of it.
+-we can not redeclare it.
+
+const :
+-it is use to create variable with constant value.
+-when we declare constant variable at same time we have to initialize it.
+-const variabe value will never change on run time. 
