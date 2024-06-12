@@ -55,8 +55,15 @@ syntax : let variablename:datatype;
                 to perform inheritance between two class we use "extends" keyword.
         syntax: class childClassName extends parentClassName.
 
-4.Encapsulation wrapping of data into single unit
-5.abstraction
+4.Encapsulation : wrapping of data into single unit
+5.abstraction : hiding implementation and showing only functonality.
+                -w can achieve by using interface and abstract method
+
+        acccess specifier :
+        public : we can acccess class properties inside same class,outside class and in child class also
+        protected:we can acccess class properties inside class,in child class but not outside class
+        private : we can acccess class property within same class.
+
 6.polymorphism: ability to take more than one form.
         -method overloading : in this we have multiple methods with same in same class
         -method overiding : in this when we have multiple method with same name in different classes
@@ -66,3 +73,11 @@ syntax : let variablename:datatype;
                   that data or code we can access in another file by exporting and importing.
                   -we use export keyword to send data
                   -we can importing keyword to access data from file. 
+
+
+
+*Interface : it is signature of class.
+             -it contain abstract method in it.
+             -we create interface by using interface keyword
+             -its child class has resonsibility to implement interface
+             -to perform inheritance in between class and interface we use "implements" keyword
