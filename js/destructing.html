@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let states = ["maharashtra","tamil nadu","goa","kerala"];
+        // let mah = states[0]
+        // let tam = states[1]
+        // let ga = states[2]
+        // let kr = states[3]
+
+        // destructring of array
+        const [mah,tam,ga,kr] = states
+        document.write(mah,"&nbsp",tam,"&nbsp",ga,"&nbsp",kr,"<br>")
+
+        let emp ={empId:101,empName:"Ajith",empSalary:950000,empAddress:"chennai"}
+
+        // let id = emp.empId;
+        // let name = emp.empName
+        // let salary = emp.empSalary
+        // let address = emp.empAddress
+
+
+        //destructing object
+        const {empId,empName,empSalary,empAddress} = emp
+
+        document.write(`${empId} ${empName} ${empSalary} ${empAddress} <br>`)
+
+        
+
+    </script>
+</body>
+</html>

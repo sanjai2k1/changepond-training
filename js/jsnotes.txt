@@ -188,3 +188,17 @@ ES5(ECMA script5)2009:
 
 // 1.replace task 
 // 2. validation task
+
+
+=====================================================================
+
+12/6/24
+
+*How to merge two or more array.
+1. by using concat method
+2. by using spread operator
+
+*destructuring : creating constant variable and storing data in it.
+               we can destructure array and objec data.
+
+               
