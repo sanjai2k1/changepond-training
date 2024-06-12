@@ -46,7 +46,23 @@ syntax : let variablename:datatype;
 2.object - it is an instance of class
         - by using object we can access class data-member and member-function outside class
         syntax : let objName = new className();
-3.Inheritance
-4.Encapsulation
+
+-constructor : it is a special member function of class.
+                -constructor execute automatically when class object is created or initialize.
+                -constructor name must be only constructor in typescript.
+
+3.Inheritance : accessing parent class property into child class.
+                to perform inheritance between two class we use "extends" keyword.
+        syntax: class childClassName extends parentClassName.
+
+4.Encapsulation wrapping of data into single unit
 5.abstraction
-6.polymorphism
+6.polymorphism: ability to take more than one form.
+        -method overloading : in this we have multiple methods with same in same class
+        -method overiding : in this when we have multiple method with same name in different classes
+
+
+*module in type : it can be collection of single or multiple typescript file,containing code with specific purpose
+                  that data or code we can access in another file by exporting and importing.
+                  -we use export keyword to send data
+                  -we can importing keyword to access data from file. 
