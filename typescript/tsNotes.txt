@@ -1,0 +1,52 @@
+12/6/24
+
+
+
+
+
+*Typescript : it is superset of javascript
+            -it is compile language.
+            -it is strict type language.
+
+*software pre-request
+1.node js
+        node -v //it will show node version
+        npm -v // it will display npm version.
+
+2.Typescript
+npm i typescript -g //it will install typescript
+tsc -v //it wil display typescript version  
+
+
+
+*we can create typescript file by writing filename.ts
+*how to execute typescript file
+
+step 1: tsc fileNmae.ts // it will compile ts file and generate plain js file
+step 2: node filename.js
+
+
+*how to create variable 
+syntax : let variablename:datatype;
+
+*datatype in typescript
+
+
+*write a function with three parameter fname,lname and display fullname
+
+*oops
+1.class : it is collection of data-member and member-function
+         -it is template which we can reuse
+         -to class we use class keyword
+         -class name must start with capital letter
+        syntax : class className{
+                data-member and member-function
+        }
+        -this:it represents current or current object
+2.object - it is an instance of class
+        - by using object we can access class data-member and member-function outside class
+        syntax : let objName = new className();
+3.Inheritance
+4.Encapsulation
+5.abstraction
+6.polymorphism
