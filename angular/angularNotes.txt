@@ -59,9 +59,18 @@ ng-template - it is directive which is use to display dom element conditionally.
 -to use pipe we use | symbole
 1.inbuilt pipe : pipe provided by angular.
 2. custom pipe : pipe developed by developer for use in project
+ng generae pipe pipename => custom pipe
 3.third party pipe : pipe developed by third party vendor
 
 
 
 
 ng-template : it is directive which is use to display dom element conditionally.
+
+*how to use bootstrap in angular
+step 1: install bootstrap
+npm i bootstrap
+
+step 2: go to angular.json file and import bootstrap file path in Style
+
+step 3 : terminate angular and restart it.

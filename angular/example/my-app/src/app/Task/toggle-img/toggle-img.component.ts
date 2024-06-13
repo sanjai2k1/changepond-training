@@ -14,7 +14,8 @@ export class ToggleImgComponent {
   photoname:string=this.photo1name
   count:number=0
   clicked (){
-    this.photo = this.count%2==0 ? this.photo1 : this.photo2
+    this.photo = this.count%2==0 ? this.photo1  : this.photo2
+    this.photoname = this.count%2==0 ? this.photo1name  : this.photo2name
     this.count++
   }
 }

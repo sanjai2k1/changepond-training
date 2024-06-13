@@ -1,4 +1,4 @@
-<p>mypipe works!</p>
+<p class="text-primary">mypipe works!</p>
 <div>{{msg}}</div>
 <!-- use of string pipe -->
 <div>{{msg | uppercase}}</div>
@@ -6,3 +6,21 @@
 <div>{{msg | titlecase}}</div>
 <div>{{msg | slice:5}}</div>
 <div>{{msg | slice:5:20}}</div>
+
+<!-- use of json pipe -->
+ <p>{{emp | json }}</p>
+
+ <!-- number pipe -->
+  <p>{{567 | number:"3.5-8"}}</p>
+  <p>{{0.567 | number:"3.5-8"}}</p>
+
+  <!-- use of date type -->
+ <p> {{3 | cube}}</p>
+
+
+
+
+ <!-- area of square -->
+ <p>area of square :{{ 4 | areaOfSquare}}</p>
+ <!-- area of circle -->
+ <p> area of circle : {{5 | areaOfCircle}}</p>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { sample } from 'rxjs';
 
 @Component({
   selector: 'app-mypipe',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class MypipeComponent {
 msg:string = "Hello friend,you all are fantastic participant."
+
+emp:any={
+  id:101,
+  name:"Ajit",
+  salary:85000
+}
 }
