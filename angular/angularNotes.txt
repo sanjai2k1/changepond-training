@@ -1,0 +1,39 @@
+npm i -g @angular/cli
+
+ng v
+
+step 1: ng new --no-standalone projectname
+step 2: cd project name
+step 3: code
+step 4:npm start --o // this will start angular project in development mode and display output on browser 4200
+
+
+*Angular : it is application designing and development platform for creaing efficient and sophisticated single page application.
+            -angular works on component and modules.
+
+*Component : - it is partial part of angular app
+-it can be any part of applcation which we can reuse multiple time.
+
+Note: in angular app is rot component
+
+node_module: all libraries or dependency will install in this folder.
+package.json : it will keep entry of installed library or packages.
+package-lock.json : it will hold detail information of install
+readme.md : it will work like guid manual
+
+*how to create component
+ng generate component componentName
+ng g c foldername/componentName
+
+*how to display individual component view or output
+-copy component selector name from its file and wrie selector name as tag where you want.
+
+
+*Databinding: access data from one file to another in same component
+1. interpolation {{}} ts => html
+2. property-binding []:ts => html(here we set atrribute value)
+3.event-binding (); html => ts (here we call event)
+4.two-way data binding[()]: ts <=> html (to perform two-way Databinding) 
+-to perform two -way databinding we use ngModel directory, but ngModel directory is not part of core angular
+it is part of forms modules,so first we hav to import formsmodule in our root module(app.module.ts) then and only we can use global directory
+
