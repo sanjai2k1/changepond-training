@@ -17,4 +17,7 @@ export class DatabindingComponent {
   greeting(){
     window.alert("good morning friends")
   }
+
+
+  mydata:any
 }

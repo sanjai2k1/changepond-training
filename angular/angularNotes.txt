@@ -37,3 +37,31 @@ ng g c foldername/componentName
 -to perform two -way databinding we use ngModel directory, but ngModel directory is not part of core angular
 it is part of forms modules,so first we hav to import formsmodule in our root module(app.module.ts) then and only we can use global directory
 
+Task :create a component with name toggleImg 
+
+*Directives : it is used to perform dom manipulation and change appearance and behaviour of dom elements.
+
+1.structural Directives : it is used to change dom element layout
+                        -it is denoted by * symbol
+                        -*ngIf: it will display dom element when it get true value otherwise not.
+                        -*ngFor: it s use to iterate or repeat dom element
+                        -*ngSwitchCase: it is used to diswplay dom element on choice basis
+2.attribute directives : it is use to change appearance and behaviour of dom element
+ngStyle: it is use to apply css property conditionally.
+ngStyle: it is use to apply css classes conditionally.
+3.custom directive : developer can write logic to create custom directive
+-to creae custom directive we have comand
+ng generae directive directivename
+
+ng-template - it is directive which is use to display dom element conditionally.
+
+*pipe : in angular pipe is used to transform property without changing its original value
+-to use pipe we use | symbole
+1.inbuilt pipe : pipe provided by angular.
+2. custom pipe : pipe developed by developer for use in project
+3.third party pipe : pipe developed by third party vendor
+
+
+
+
+ng-template : it is directive which is use to display dom element conditionally.

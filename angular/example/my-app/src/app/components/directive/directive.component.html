@@ -1,1 +1,39 @@
 <p>directive works!</p>
+
+<div *ngIf="isCond1 then truepart else falsepart">sanjai</div>
+
+
+<ng-template #truepart>
+    <h2>I like samosa</h2>
+</ng-template>
+
+<ng-template #falsepart>
+    <h2>I like dosa</h2>
+</ng-template>
+
+<ul>
+    <li *ngFor="let bike of bikes">{{bike}}</li>
+</ul>
+
+
+<!-- use of *ngSwitchCase -->
+
+<div [ngSwitch]="mybike">
+
+    <!-- <div *ngSwitchCase=" 'HeroHond' ">you have selected HeroHond</div>
+    <div *ngSwitchCase=" 'BMW' ">you have selected BMW</div>
+    <div *ngSwitchCase=" 'Yahama' ">you have selected Yahama</div>
+    <div *ngSwitchCase=" 'JavaBike' ">you have selected JavaBike</div>
+    <div *ngSwitchCase=" 'Bajaj' ">you have selected Bajaj</div> -->
+    <div *ngFor="let bike of bikes">
+        <div *ngSwitchCase="bike">you have selected <strong>{{bike}}</strong></div>
+    </div>
+
+    <div *ngSwitchDefault>Invalid Choice</div>
+
+
+</div>
+
+
+
+

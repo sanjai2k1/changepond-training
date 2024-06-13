@@ -11,7 +11,16 @@
 <hr>
 
 <img  src="assets/images/even-1.jpg" alt="">
+
+<!-- use of property binding -->
 <img [src]="imgpath" [alt]="imgname">
 <hr>
+<!-- event binding -->
 
 <button type="button" (click)="greeting()">click on me</button>
+
+<!-- use of ngModel -->
+
+<form >
+    <input type="text" name="txt1" [(ngModel)]="mydata"> {{mydata}}
+</form>
