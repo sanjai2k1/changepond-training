@@ -74,3 +74,23 @@ npm i bootstrap
 step 2: go to angular.json file and import bootstrap file path in Style
 
 step 3 : terminate angular and restart it.
+
+
+*Routing : navigation of component
+          -display component output or view by writing its path in browser url.
+          -routing will display component output under <router-outlet> directory.
+          -routng is object containing propert wit value.
+          -in angular root routing module  name is app-routing -module.ts
+
+*types of routing
+1.naming routing: we write component routing path in browser url to display component output.
+2.default routing : display component output by default means , keep path value blank in routing
+                    - try to keep default routing firt in orderz
+3.redirect routing : display component output by writing different path name
+4. parameterize routing : passing paramter with path name
+5. child roting : define one routing inside another routing
+                    -for this in parent parent routing we have to use children property
+                    -in parent routing component html file we must write <router-outlet><router-outlet>
+6.wildcard routing : display component output ,when user write wrong path in browser url.
+                     -in this we write *as value in routing path.
+                     -wildcard routing must last routing,router define below to it never work.
