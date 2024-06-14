@@ -9,6 +9,8 @@ import { EmpDetailsComponent } from './components/emp-details/emp-details.compon
 import { AngFormComponent } from './components/ang-form/ang-form.component';
 import { MainDashboardComponent } from './components/main-dashboard/main-dashboard.component';
 import { RtfComponent } from './components/rtf/rtf.component';
+import { BreakfastComponent } from './components/breakfast/breakfast.component';
+import { ProductDashboardComponent } from './crud/product-dashboard/product-dashboard.component';
 
 const routes: Routes = [
   // 2.default routing 
@@ -24,6 +26,8 @@ const routes: Routes = [
  {path:"directives",component:DirectiveComponent},
  {path:"toggleimg",component:ToggleImgComponent},
  {path:"togglelist",component:ToggleListComponent},
+ {path:"breakfast",component:BreakfastComponent},
+ {path:"products",component:ProductDashboardComponent},
 
 
  //4. parameterize routing

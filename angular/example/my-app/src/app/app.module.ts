@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DatabindingComponent } from './components/databinding/databinding.component';
@@ -19,7 +19,9 @@ import { MainDashboardComponent } from './components/main-dashboard/main-dashboa
 import { RtfComponent } from './components/rtf/rtf.component';
 import { UtdfComponent } from './components/utdf/utdf.component';
 import { NavComponent } from './components/nav/nav.component';
-import { FooterComponent } from './components/footer/footer.component'
+import { FooterComponent } from './components/footer/footer.component';
+import { BreakfastComponent } from './components/breakfast/breakfast.component';
+import { ProductDashboardComponent } from './crud/product-dashboard/product-dashboard.component'
 
 @NgModule({
   declarations: [
@@ -39,13 +41,16 @@ import { FooterComponent } from './components/footer/footer.component'
     RtfComponent,
     UtdfComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    BreakfastComponent,
+    ProductDashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   
   providers: [

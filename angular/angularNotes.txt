@@ -133,3 +133,16 @@ ng g service servicename
 -to access data from service to component for that in component constructor we have to create instance of service  class then we can access service data into component.
 
 - creating service class instance in component constructor is called dependency injection
+
+
+*How to create REST fake API
+dummy server : json-server
+npm i -g json-server
+database : json database
+
+json-server --watch -p 8888 db.json
+
+*to make request from service to server we have create instance of HyypClient class in service .but HttpClient class is not part of core angular.it is part of httpClientModule.
+for this first we have to import HtppClient module in our root module
+
+*to make request from service we have to create instance of HttpClient class in service constructor
