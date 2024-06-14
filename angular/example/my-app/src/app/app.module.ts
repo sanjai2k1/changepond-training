@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DatabindingComponent } from './components/databinding/databinding.component';
 import { DirectiveComponent } from './components/directive/directive.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { ToggleImgComponent } from './Task/toggle-img/toggle-img.component';
 import { ToggleListComponent } from './Task/toggle-list/toggle-list.component';
 import { MypipeComponent } from './components/mypipe/mypipe.component';
@@ -44,7 +44,8 @@ import { FooterComponent } from './components/footer/footer.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   
   providers: [

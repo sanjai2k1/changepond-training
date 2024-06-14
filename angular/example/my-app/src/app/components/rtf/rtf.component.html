@@ -1,1 +1,47 @@
 <p>rtf works!</p>
+
+<form [formGroup]="userform" (ngSubmit)="getData()">
+    <label class="form-label">Enter your Name:</label>
+    <input type="text" name="fname" formControlName="fname" class="form-control">
+    <div class="alert alert-danger" *ngIf="userform.get('fname').touched && userform.get('fname').invalid  ">
+        <div *ngIf="userform.get('fname').errors.required">this field is required</div>
+        <div *ngIf="userform.get('fname').errors.pattern">fname msut contain only character min-3 and max-20</div>
+    </div>
+    <div class="alert alert-success" *ngIf=" userform.get('fname').valid  ">
+        <div *ngIf="!userform.get('fname').errors">success</div>
+    </div>
+    
+    <label class="form-label">Enter your Password:</label>
+    <input type="text" name="password" formControlName="password" class="form-control">
+    <div class="alert alert-danger" *ngIf="userform.get('password').touched && userform.get('password').invalid">
+        <div *ngIf="userform.get('password').errors.required">this field is required</div>
+        <div *ngIf="userform.get('password').errors.pattern">Password is incorrect</div>
+    </div>
+    <div class="alert alert-success" *ngIf=" userform.get('password').valid  ">
+        <div *ngIf="!userform.get('password').errors">success</div>
+    </div>
+
+    <label class="form-label">Enter your email:</label>
+    <input type="text" name="email" formControlName="email" class="form-control">
+    <div class="alert alert-danger" *ngIf="userform.get('email').touched && userform.get('email').invalid">
+        <div *ngIf="userform.get('email').errors.required">this field is required</div>
+        <div *ngIf="userform.get('email').errors.pattern">email is incorrect</div>
+    </div>
+    <div class="alert alert-success" *ngIf=" userform.get('email').valid  ">
+        <div *ngIf="!userform.get('email').errors">success</div>
+    </div>
+<div class="form-group">
+    <label for="" class="form-check-label"></label>
+    <input type="checkbox" name="term" formControlName="term" class="form-check-input" id="">
+    Accept Term and condition
+
+<div class="alert alert-danger" *ngIf="userform.get('term').touched && userform.get('term').invalid">
+    <div *ngIf="userform.get('email').errors.required">this field is required</div>
+</div>
+
+
+</div>
+
+
+    <button type="submit" class="btn btn-primary mt-2" [disabled]="userform.invalid" >Submit</button>
+</form>

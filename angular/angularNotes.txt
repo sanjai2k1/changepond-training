@@ -94,3 +94,42 @@ step 3 : terminate angular and restart it.
 6.wildcard routing : display component output ,when user write wrong path in browser url.
                      -in this we write *as value in routing path.
                      -wildcard routing must last routing,router define below to it never work.
+
+*how to navigate one component to another by clicking on button.
+*how to create layout.
+
+*Form validation in angular
+In angular there are two ways to perform form validation.
+1.By using UTDF(User tempalte Driven Form): when we have to perform simple and small form validation 
+-in utdf validation in html file.
+-in this we use ngModel model directory.
+
+2.By using RTF(Reactive tempalte Form) : 
+-when we have write complex logic to perform form validation in that case we use rtf.
+-in rtf valiaion in ts file
+-to Rtf validation firs we have to import ReactiveFormsModule in root module.
+-in rtf form validation we use two classes
+1.FormGroup: it will hold all form control data in it. as well as it tracks status of form.
+2.FormControl: it will track status and validation of individual input control.
+
+
+states                          class if true          class if  false
+the control has been vsited     ng-touched              ng-untouched
+the control value ha schanged   ng-dirty             ng-pristine
+the control's value is valid    ng-valid                ng-invalid
+
+step 1: import reactiveformsodule in root module(app.module) from formsmodule
+step 2: import FormGroup and FormControl class in etf component
+
+
+*service : in angular service is special class with extra power
+-we can share data with multiple component-we can implement bussiness logic in it
+-we can perform external communication(fetch data from server)
+
+To create service
+ng g service servicename
+
+*how to access service data into any component.
+-to access data from service to component for that in component constructor we have to create instance of service  class then we can access service data into component.
+
+- creating service class instance in component constructor is called dependency injection
