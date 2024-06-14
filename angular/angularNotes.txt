@@ -14,7 +14,7 @@ step 4:npm start --o // this will start angular project in development mode and 
 *Component : - it is partial part of angular app
 -it can be any part of applcation which we can reuse multiple time.
 
-Note: in angular app is rot component
+Note: in angular app is root component
 
 node_module: all libraries or dependency will install in this folder.
 package.json : it will keep entry of installed library or packages.
