@@ -14,6 +14,8 @@ import { ProductDashboardComponent } from './crud/product-dashboard/product-dash
 import { ProductAddComponent } from './crud/product-add/product-add.component';
 import { ProducUpdateComponent } from './crud/produc-update/produc-update.component';
 import { AngualarmaterialComponent } from './components/angualarmaterial/angualarmaterial.component';
+import { LoginComponent } from './components/login/login.component';
+import { authGuard } from './shared/Guards/auth.guard';
 
 const routes: Routes = [
   // 2.default routing 
@@ -21,8 +23,9 @@ const routes: Routes = [
 
   //3. redirect routing
   // {path:"",redirectTo:"databinding",pathMatch:"full"},
+  {path:"",component:LoginComponent},
 
-  {path:"maindashboard",component:MainDashboardComponent,children:[
+  {path:"maindashboard",component:MainDashboardComponent,canActivate:[authGuard],children:[
 
  //1.naming routing
  {path:"databinding",component:DatabindingComponent},

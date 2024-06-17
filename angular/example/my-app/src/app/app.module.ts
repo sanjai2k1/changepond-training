@@ -26,6 +26,9 @@ import { ProductAddComponent } from './crud/product-add/product-add.component';
 import { ProducUpdateComponent } from './crud/produc-update/produc-update.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { AngualarmaterialComponent } from './components/angualarmaterial/angualarmaterial.component'
+import {MatButtonModule} from "@angular/material/button";
+import { LoginComponent } from './components/login/login.component'
+
 
 @NgModule({
   declarations: [
@@ -50,14 +53,16 @@ import { AngualarmaterialComponent } from './components/angualarmaterial/anguala
     ProductDashboardComponent,
     ProductAddComponent,
     ProducUpdateComponent,
-    AngualarmaterialComponent
+    AngualarmaterialComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule
   ],
   
   providers: [

@@ -1,0 +1,11 @@
+<div class="login-container">
+    <form >
+        <label for="">Enter User Id</label>
+        <input type="text" name="uid" [(ngModel)]="uid" id="uid">
+        <label for="">Enter User Password</label>
+        <input type="text" name="upass" [(ngModel)]="upass" id="upass">
+        <br>
+        <br>
+        <input type="submit" value="Submit" (click)="signIn()">
+    </form>
+</div>

@@ -162,3 +162,9 @@ npm i font-awesome
 
 
 
+*Guard : it prevent to display component view or output.
+ng g guard guardName
+
+ng g guard shared/Guards/auth
+
+Login
