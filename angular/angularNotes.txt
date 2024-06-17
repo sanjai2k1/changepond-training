@@ -146,3 +146,16 @@ json-server --watch -p 8888 db.json
 for this first we have to import HtppClient module in our root module
 
 *to make request from service we have to create instance of HttpClient class in service constructor
+
+======================================================================================================
+17/4/24
+
+*use of concurently library
+
+step 1:npm i -g concurrently
+step 2: in json file
+"json-server":"cd angular/example/my-app/src/app/shared/database && json-server --watch -p 8888 db.json",
+"start-dev":"concurrently \"ng s --o\" \"npm run json-server\"",
+
+*use of font-awesome
+npm i font-awesome

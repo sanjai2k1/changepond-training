@@ -21,7 +21,9 @@ import { UtdfComponent } from './components/utdf/utdf.component';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BreakfastComponent } from './components/breakfast/breakfast.component';
-import { ProductDashboardComponent } from './crud/product-dashboard/product-dashboard.component'
+import { ProductDashboardComponent } from './crud/product-dashboard/product-dashboard.component';
+import { ProductAddComponent } from './crud/product-add/product-add.component';
+import { ProducUpdateComponent } from './crud/produc-update/produc-update.component'
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { ProductDashboardComponent } from './crud/product-dashboard/product-dash
     NavComponent,
     FooterComponent,
     BreakfastComponent,
-    ProductDashboardComponent
+    ProductDashboardComponent,
+    ProductAddComponent,
+    ProducUpdateComponent
   ],
   imports: [
     BrowserModule,

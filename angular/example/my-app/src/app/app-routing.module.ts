@@ -11,6 +11,8 @@ import { MainDashboardComponent } from './components/main-dashboard/main-dashboa
 import { RtfComponent } from './components/rtf/rtf.component';
 import { BreakfastComponent } from './components/breakfast/breakfast.component';
 import { ProductDashboardComponent } from './crud/product-dashboard/product-dashboard.component';
+import { ProductAddComponent } from './crud/product-add/product-add.component';
+import { ProducUpdateComponent } from './crud/produc-update/produc-update.component';
 
 const routes: Routes = [
   // 2.default routing 
@@ -27,6 +29,9 @@ const routes: Routes = [
  {path:"toggleimg",component:ToggleImgComponent},
  {path:"togglelist",component:ToggleListComponent},
  {path:"breakfast",component:BreakfastComponent},
+ {path:"productadd",component:ProductAddComponent},
+ {path:"productupdate/:id",component:ProducUpdateComponent},
+
  {path:"products",component:ProductDashboardComponent},
 
 

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DatabaseServiceService } from '../../shared/service/database-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-dashboard',
@@ -8,16 +9,31 @@ import { DatabaseServiceService } from '../../shared/service/database-service.se
 })
 export class ProductDashboardComponent {
 myproducts:any
-constructor(private dbserv:DatabaseServiceService){
+some:any
+constructor(private dbserv:DatabaseServiceService,private routerObj:Router){
   
 }
 
 
+
 ngOnInit(){
-  this.myproducts = this.dbserv.getRecord("product").subscribe((res)=>{
+this.fetchData()
+}
+
+fetchData(){
+  this.dbserv.getRecord("product").subscribe((res)=>{
     this.myproducts=res
-    console.log(res)
+   
   })
+}
+delete(id:any){
+  if(window.confirm(`delete ${id}`)){
+    this.dbserv.deleteRecord("product",id).subscribe(()=>{
+      window.alert("deleted")
+      this.fetchData()
+    })
+
+  }
 }
 
 }

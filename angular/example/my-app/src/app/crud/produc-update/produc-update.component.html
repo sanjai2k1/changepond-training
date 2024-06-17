@@ -1,0 +1,24 @@
+<p>produc-update works!</p>
+
+
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <form [formGroup]="prodDataUpdate" (ngSubmit)="addData()">
+            <div>
+                <label for="pname" class="form-label">Enter Product Name:</label>
+                <input type="text" name="pname" formControlName="pname" [(ngModel)]="name">
+            </div>
+            <div>
+                <label for="price" class="form-label">Enter Product price:</label>
+                <input type="text" name="price" formControlName="price" [(ngModel)]="price">
+            </div>
+            <div>
+                <label for="company" class="form-label">Enter Product Company:</label>
+                <input type="text" name="company" formControlName="company" [(ngModel)]="company">
+            </div>
+            <button type="submit" >Submit</button>
+        </form>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
