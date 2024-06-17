@@ -32,9 +32,9 @@ ngOnInit(){
 
 
     this.prodDataUpdate = new FormGroup({
-      pname:new FormControl(this.name,[Validators.required,Validators.pattern('^[a-zA-Z]{3,20}$')]),
-      price:new FormControl(this.price,[Validators.required,Validators.pattern('^[0-9]{3,20}$')]),
-      company:new FormControl(this.company,[Validators.required,Validators.pattern('^[a-zA-Z]{3,20}$')])
+      pname:new FormControl("",[Validators.required,Validators.pattern('^[a-zA-Z]{3,20}$')]),
+      price:new FormControl("",[Validators.required,Validators.pattern('^[0-9]{3,20}$')]),
+      company:new FormControl("",[Validators.required,Validators.pattern('^[a-zA-Z]{3,20}$')])
     }
     )
   })
@@ -44,12 +44,9 @@ ngOnInit(){
 }
 
 
-addData(){
-  console.log(this.prodData.value)
-  this.dbServ.addRecord("product",this.prodData.value).subscribe(()=>{
-
-    window.alert("Record Added successfully")
-    this.routerObj.navigate(['/maindashboard/products'])
-  })
+updateData(){
+  console.log(this.prodDataUpdate.value,this.id)
+  this.dbServ.updateRecord("product",this.id,this.prodDataUpdate.value).subscribe((res)=>console.log(res))
+  this.routerObj.navigate(['/maindashboard/products'])
 }
 }

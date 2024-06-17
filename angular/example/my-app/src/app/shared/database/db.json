@@ -8,26 +8,26 @@
     },
     {
       "id": "3",
-      "pname": "Laptop",
+      "pname": "Laptopw",
       "price": 500,
       "company": "Sony"
     },
     {
       "id": "4",
-      "pname": "Laptop",
+      "pname": "mouse",
       "price": 2000,
       "company": "Dell"
     },
     {
       "id": "5",
-      "pname": "Laptop",
+      "pname": "keyboard",
       "price": 400,
       "company": "Iball"
     },
     {
       "id": "81f4",
-      "pname": "Laptop",
-      "price": 500,
+      "pname": "cpu",
+      "price": "500000",
       "company": "Sony"
     }
   ],

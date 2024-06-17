@@ -23,7 +23,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BreakfastComponent } from './components/breakfast/breakfast.component';
 import { ProductDashboardComponent } from './crud/product-dashboard/product-dashboard.component';
 import { ProductAddComponent } from './crud/product-add/product-add.component';
-import { ProducUpdateComponent } from './crud/produc-update/produc-update.component'
+import { ProducUpdateComponent } from './crud/produc-update/produc-update.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { AngualarmaterialComponent } from './components/angualarmaterial/angualarmaterial.component'
 
 @NgModule({
   declarations: [
@@ -47,7 +49,8 @@ import { ProducUpdateComponent } from './crud/produc-update/produc-update.compon
     BreakfastComponent,
     ProductDashboardComponent,
     ProductAddComponent,
-    ProducUpdateComponent
+    ProducUpdateComponent,
+    AngualarmaterialComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +61,8 @@ import { ProducUpdateComponent } from './crud/produc-update/produc-update.compon
   ],
   
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })

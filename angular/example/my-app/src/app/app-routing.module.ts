@@ -13,6 +13,7 @@ import { BreakfastComponent } from './components/breakfast/breakfast.component';
 import { ProductDashboardComponent } from './crud/product-dashboard/product-dashboard.component';
 import { ProductAddComponent } from './crud/product-add/product-add.component';
 import { ProducUpdateComponent } from './crud/produc-update/produc-update.component';
+import { AngualarmaterialComponent } from './components/angualarmaterial/angualarmaterial.component';
 
 const routes: Routes = [
   // 2.default routing 
@@ -31,6 +32,7 @@ const routes: Routes = [
  {path:"breakfast",component:BreakfastComponent},
  {path:"productadd",component:ProductAddComponent},
  {path:"productupdate/:id",component:ProducUpdateComponent},
+ {path:"angularmaterial",component:AngualarmaterialComponent},
 
  {path:"products",component:ProductDashboardComponent},
 

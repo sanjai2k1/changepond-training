@@ -30,7 +30,7 @@ export class DatabaseServiceService {
   }
 
   updateRecord(tableName:string,id:any,data:any){
-    return this.http.put(`${this.baseUrl}/${tableName}/${id}}`,data)
+    return this.http.patch(`${this.baseUrl}/${tableName}/${id}`,data)
   }
   
 }

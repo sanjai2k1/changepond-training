@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <form [formGroup]="prodDataUpdate" (ngSubmit)="addData()">
+        <form [formGroup]="prodDataUpdate" (ngSubmit)="updateData()">
             <div>
                 <label for="pname" class="form-label">Enter Product Name:</label>
                 <input type="text" name="pname" formControlName="pname" [(ngModel)]="name">
