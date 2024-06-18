@@ -1,8 +1,11 @@
 // import logo from './logo.svg';
 import './App.css';
 import ClassComp from './components/ClassComp';
+import ConditionalRenComp from './components/ConditionalRenComp';
 import FunctionComp from './components/FunctionComp';
+import MethodEventComp from './components/MethodEventComp';
 import MyDetailsComp from './components/MyDetailsComp';
+import SetStateComp from './components/SetStateComp';
 
 function App() {
   return (
@@ -22,9 +25,12 @@ function App() {
         </a>
       </header> */}
       <h1>Welcome You all in my react session!</h1>
-      <FunctionComp myName="Sanjai J" post="Software Developer"/>
+      {/* <FunctionComp myName="Sanjai J" post="Software Developer"/>
       <ClassComp myName="Sanjai J" post="Software Developer"/>
-      <MyDetailsComp fname="sanjai" lname="J" email="sanjai2k1j@gmail.com" contact="9176071379" />
+      <MyDetailsComp fname="sanjai" lname="J" email="sanjai2k1j@gmail.com" contact="9176071379" /> */}
+      {/* <MethodEventComp/> */}
+      {/* <SetStateComp/> */}
+      <ConditionalRenComp/>
     </div>
   );
 }

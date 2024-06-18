@@ -60,3 +60,16 @@ react work on comonent basis
 *destructuring of props
 
 create a class component with name myDetails containing props fname,lname,email,contact as well as stae with property gender,matial status,address and display is data on browser
+
+
+*meythod and event.
+
+Rendering: displ component output or view on browser
+*conditional rendering : display component output of basis of conditional
+1.if else : if condition is true then if block will render otherwise else block 
+2.element as variable : in this we store data in variable and return tha variable as element
+3.use of ternary operator : it is an shorthand of if else
+syntax : condition ? truepart : elsepart
+4.use of short-circuit :in this if condition is true then and only then it will return output.
+-it is denoted by &&.
+
