@@ -1,5 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
+import ClassComp from './components/ClassComp';
+import FunctionComp from './components/FunctionComp';
+import MyDetailsComp from './components/MyDetailsComp';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
         </a>
       </header> */}
       <h1>Welcome You all in my react session!</h1>
+      <FunctionComp myName="Sanjai J" post="Software Developer"/>
+      <ClassComp myName="Sanjai J" post="Software Developer"/>
+      <MyDetailsComp fname="sanjai" lname="J" email="sanjai2k1j@gmail.com" contact="9176071379" />
     </div>
   );
 }

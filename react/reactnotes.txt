@@ -33,4 +33,30 @@ react work on comonent basis
 -wih we can reuse.
 
 *In react we have wo tyes of component.
-1.
+1.function component: when your main goal is to create UI
+2.class component: when you need to deal with essential data and need to write complex logic in that case we use it.
+
+*How to display individual component output.
+
+
+*props(property): it is paramter or functional paramter which is use to pass data inside component.
+-props return data in objec format
+-in function component we can acces rops like props.propsname.
+-in class component we can access prop like this.props.propsname
+
+*JSX(javascript XML):
+-it makes react code easy and allows us to write html code in react component.
+-in jsx we have to write one parent element to wrap another child element,parent element can be any block element.
+
+*State in class component
+-State in class component it is used to handle essential data
+-State in  react is use to handle essential data in component
+-in class component we write state in constructor
+-state return us object type of data
+-we can access data outsid state by writing this.state.property
+
+
+*destructuring of state
+*destructuring of props
+
+create a class component with name myDetails containing props fname,lname,email,contact as well as stae with property gender,matial status,address and display is data on browser
