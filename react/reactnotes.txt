@@ -10,4 +10,27 @@ Technology you must know
 
 *there  are two way to create react project
 1.by npx: in this case no need to install configuration file
+npx create-react-app appname
+cd appname
+npm start
+
 2.npm: we need to install configuration file
+npm create-react-app appname
+create-react-app appname
+cd appname
+npm start
+
+*react- it is javascript library.
+-it craaate single page applicaij(SPA)
+-it is not framework
+
+react work on comonent basis
+-in ract root component name is app.js
+
+*what is component
+-it is partial par tof react project
+-it can be any part of project.
+-wih we can reuse.
+
+*In react we have wo tyes of component.
+1.
