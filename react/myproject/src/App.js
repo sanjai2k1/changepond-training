@@ -7,6 +7,7 @@ import MethodEventComp from './components/MethodEventComp';
 import MyDetailsComp from './components/MyDetailsComp';
 import MyImagesComp from './components/MyImagesComp';
 import SetStateComp from './components/SetStateComp';
+import ToggleImgComp from './Tasks/ToggleImgComp';
 
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
       {/* <SetStateComp/> */}
       {/* <ConditionalRenComp/> */}
       <MyImagesComp/>
+
+      <ToggleImgComp/>
     </div>
   );
 }
