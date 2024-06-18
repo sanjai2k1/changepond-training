@@ -27,7 +27,8 @@ import { ProducUpdateComponent } from './crud/produc-update/produc-update.compon
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { AngualarmaterialComponent } from './components/angualarmaterial/angualarmaterial.component'
 import {MatButtonModule} from "@angular/material/button";
-import { LoginComponent } from './components/login/login.component'
+import { LoginComponent } from './components/login/login.component';
+import { KarComponent } from './components/kar/kar.component'
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { LoginComponent } from './components/login/login.component'
     ProductAddComponent,
     ProducUpdateComponent,
     AngualarmaterialComponent,
-    LoginComponent
+    LoginComponent,
+    KarComponent
   ],
   imports: [
     BrowserModule,
