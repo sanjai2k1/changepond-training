@@ -9,6 +9,7 @@ import MyImagesComp from './components/MyImagesComp';
 import ParentComp from './components/ParentComp';
 import SetStateComp from './components/SetStateComp';
 import ToggleImgComp from './Tasks/ToggleImgComp';
+import ToggleMultiImgComp from './Tasks/ToggleMultiImgComp';
 
 function App() {
   return (
@@ -37,7 +38,8 @@ function App() {
       {/* <MyImagesComp/>
 
       <ToggleImgComp/> */}
-      <ParentComp/>
+      {/* <ParentComp/> */}
+      <ToggleMultiImgComp/>
     </div>
   );
 }
