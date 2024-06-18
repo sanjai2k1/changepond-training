@@ -5,6 +5,7 @@ import ConditionalRenComp from './components/ConditionalRenComp';
 import FunctionComp from './components/FunctionComp';
 import MethodEventComp from './components/MethodEventComp';
 import MyDetailsComp from './components/MyDetailsComp';
+import MyImagesComp from './components/MyImagesComp';
 import SetStateComp from './components/SetStateComp';
 
 function App() {
@@ -30,7 +31,8 @@ function App() {
       <MyDetailsComp fname="sanjai" lname="J" email="sanjai2k1j@gmail.com" contact="9176071379" /> */}
       {/* <MethodEventComp/> */}
       {/* <SetStateComp/> */}
-      <ConditionalRenComp/>
+      {/* <ConditionalRenComp/> */}
+      <MyImagesComp/>
     </div>
   );
 }
