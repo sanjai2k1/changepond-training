@@ -6,6 +6,7 @@ import FunctionComp from './components/FunctionComp';
 import MethodEventComp from './components/MethodEventComp';
 import MyDetailsComp from './components/MyDetailsComp';
 import MyImagesComp from './components/MyImagesComp';
+import ParentComp from './components/ParentComp';
 import SetStateComp from './components/SetStateComp';
 import ToggleImgComp from './Tasks/ToggleImgComp';
 
@@ -33,9 +34,10 @@ function App() {
       {/* <MethodEventComp/> */}
       {/* <SetStateComp/> */}
       {/* <ConditionalRenComp/> */}
-      <MyImagesComp/>
+      {/* <MyImagesComp/>
 
-      <ToggleImgComp/>
+      <ToggleImgComp/> */}
+      <ParentComp/>
     </div>
   );
 }

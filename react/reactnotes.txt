@@ -73,3 +73,6 @@ syntax : condition ? truepart : elsepart
 4.use of short-circuit :in this if condition is true then and only then it will return output.
 -it is denoted by &&.
 
+*component interaction:
+-fetching data from parent comonent to child component
+-how to make parent child
