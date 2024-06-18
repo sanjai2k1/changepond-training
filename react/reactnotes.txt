@@ -1,0 +1,13 @@
+18/6/2024
+
+Technology you must know
+-Html,css,js(basic js,ES5,ES6 ,oops)
+
+-s/w pre-requisit
+-nodejs
+-npm
+-editor
+
+*there  are two way to create react project
+1.by npx: in this case no need to install configuration file
+2.npm: we need to install configuration file
