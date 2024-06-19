@@ -76,3 +76,16 @@ syntax : condition ? truepart : elsepart
 *component interaction:
 -fetching data from parent comonent to child component
 -how to make parent child
+
+internal css: we can write css inside component
+external css:in this we creae a seperate file
+module css: you have to write in sperate
+filename.module.css
+then we have to import it in component.
+
+
+
+HOC (Higher order Component):
+when we have common bussiness logic and we want to share with multiple component for that we use it.
+-in hoc we can share data from function component to other component.
+-in hoc we pass other function as parameter

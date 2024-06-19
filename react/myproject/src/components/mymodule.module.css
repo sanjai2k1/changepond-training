@@ -1,0 +1,8 @@
+.box{
+    border-radius: 50%;
+    border: 2px solid blue;
+}
+
+.box:hover{
+    transform: rotateX(10%);
+}

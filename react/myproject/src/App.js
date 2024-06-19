@@ -1,15 +1,20 @@
+
 // import logo from './logo.svg';
+
 import './App.css';
-import ClassComp from './components/ClassComp';
-import ConditionalRenComp from './components/ConditionalRenComp';
-import FunctionComp from './components/FunctionComp';
-import MethodEventComp from './components/MethodEventComp';
-import MyDetailsComp from './components/MyDetailsComp';
-import MyImagesComp from './components/MyImagesComp';
+import ClickCounterComp from './components/ClickCounterComp';
+import HoverCounterComp from './components/HoverCounterComp';
+import MyCssComp from './components/MyCssComp';
+// import ClassComp from './components/ClassComp';
+// import ConditionalRenComp from './components/ConditionalRenComp';
+// import FunctionComp from './components/FunctionComp';
+// import MethodEventComp from './components/MethodEventComp';
+// import MyDetailsComp from './components/MyDetailsComp';
+// import MyImagesComp from './components/MyImagesComp';
+// import SetStateComp from './components/SetStateComp';
+// import ToggleImgComp from './Tasks/ToggleImgComp';
+// import ToggleMultiImgComp from './Tasks/ToggleMultiImgComp';
 import ParentComp from './components/ParentComp';
-import SetStateComp from './components/SetStateComp';
-import ToggleImgComp from './Tasks/ToggleImgComp';
-import ToggleMultiImgComp from './Tasks/ToggleMultiImgComp';
 
 function App() {
   return (
@@ -39,7 +44,11 @@ function App() {
 
       <ToggleImgComp/> */}
       {/* <ParentComp/> */}
-      <ToggleMultiImgComp/>
+      {/* <ToggleMultiImgComp/> */}
+      {/* <MyCssComp/> */}
+      {/* <ClickCounterComp/> */}
+      <HoverCounterComp/>
+      <ClickCounterComp/>
     </div>
   );
 }
