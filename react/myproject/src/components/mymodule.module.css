@@ -4,5 +4,5 @@
 }
 
 .box:hover{
-    transform: rotateX(10%);
+    animation: box infinite 20s linear;
 }

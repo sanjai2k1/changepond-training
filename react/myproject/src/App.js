@@ -48,9 +48,9 @@ function App() {
       {/* <ToggleMultiImgComp/> */}
       {/* <MyCssComp/> */}
       {/* <ClickCounterComp/> */}
-      <HoverCounterComp/>
-      <ClickCounterComp/>
-      <MySliderComp/>
+      {/* <HoverCounterComp/>
+      <ClickCounterComp/> */}
+      {/* <MySliderComp/> */}
     </div>
   );
 }

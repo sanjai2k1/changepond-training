@@ -97,3 +97,18 @@ material ui
 -it is an external library which provide inbuild components to react
 -it makes react app atractive ,responsive,
 npm install @mui/material @emotion/react @emotion/styled
+
+
+
+
+*Routing
+
+navigation of components
+
+
+types of Routing
+1.naming Routing : display component output b y writting its path name is browser url
+2. default routing : display component output without writing path in browser url.
+3. parameterize routing : passing parameter with routing path and display component output.
+4.child routing:
+5.default routing:
