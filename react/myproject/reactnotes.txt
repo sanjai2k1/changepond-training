@@ -110,5 +110,10 @@ types of Routing
 1.naming Routing : display component output b y writting its path name is browser url
 2. default routing : display component output without writing path in browser url.
 3. parameterize routing : passing parameter with routing path and display component output.
-4.child routing:
-5.default routing:
+4.child routing:in this we display child component output in parent we import <Outlet/> in parent component and write in render method as tag.
+5.default routing: display component output when user enter wrong path in browser url.
+-it is denoted by *
+-it must be last routing ,it below routing will never work
+
+
+PageNotFound:

@@ -10,10 +10,10 @@ import odd2 from "../images/odd-2.jpg"
 import odd3 from "../images/odd-3.jpg"
 import odd4 from "../images/odd-4.jpg"
 import odd5 from "../images/odd-5.jpg"
-
+import notfound from "../images/notfound.png"
 
 const staticData={
-    audio,video,even1,even2,even3,even4,even5,odd1,odd2,odd3,odd4,odd5
+    audio,video,even1,even2,even3,even4,even5,odd1,odd2,odd3,odd4,odd5,notfound
 }
 
 
