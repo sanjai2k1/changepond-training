@@ -10,6 +10,7 @@ import ReactHook from "../Hooks/ReactHook";
 import UseStateHooks from "../Hooks/UseStateHooks";
 import MainDashBoard from "../layout/MainDashBoard";
 import UseEffectHook from "../Hooks/UseEffectHook";
+import Dashboard from "../components/Dashboard";
 const router = createBrowserRouter([
     {
         path: "maindashboard",
@@ -33,6 +34,8 @@ const router = createBrowserRouter([
                 { path: "useeffect", element: <UseEffectHook /> }
             ]
         }]
+    },{
+path:"material",element:<Dashboard/>
     },
     {
         path: "*", element: <PageNotFound />
