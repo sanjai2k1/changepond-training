@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { HOCComp } from './HOCComp'
+import { Button } from '@mui/material'
 
 export  class ClickCounterComp extends Component {
   
@@ -7,7 +8,8 @@ export  class ClickCounterComp extends Component {
     return (
       <div>
         <p>Count is : {this.props.count}</p>
-        <button onClick={()=>this.props.increment()}>Increment on click</button>
+        {/* <button onClick={()=>this.props.increment()}>Increment on click</button> */}
+        <Button variant='contained' onClick={()=>this.props.increment()} >Increment</Button>
       </div>
     )
   }

@@ -89,3 +89,11 @@ HOC (Higher order Component):
 when we have common bussiness logic and we want to share with multiple component for that we use it.
 -in hoc we can share data from function component to other component.
 -in hoc we pass other function as parameter
+
+npm i bootstrap
+use its classes in react component
+
+material ui
+-it is an external library which provide inbuild components to react
+-it makes react app atractive ,responsive,
+npm install @mui/material @emotion/react @emotion/styled

@@ -15,7 +15,8 @@ import MyCssComp from './components/MyCssComp';
 // import ToggleImgComp from './Tasks/ToggleImgComp';
 // import ToggleMultiImgComp from './Tasks/ToggleMultiImgComp';
 import ParentComp from './components/ParentComp';
-
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import MySliderComp from './components/MySliderComp';
 function App() {
   return (
     <div className="App">
@@ -49,6 +50,7 @@ function App() {
       {/* <ClickCounterComp/> */}
       <HoverCounterComp/>
       <ClickCounterComp/>
+      <MySliderComp/>
     </div>
   );
 }
