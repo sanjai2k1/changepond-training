@@ -1,20 +1,21 @@
+// eslint-disable-next-line 
 import { createBrowserRouter } from "react-router-dom";
-import MySliderComp from "../components/MySliderComp";
-import MyImagesComp from "../components/MyImagesComp";
-import ParentComp from "../components/ParentComp";
-import ClickCounterComp from "../components/ClickCounterComp";
-import PageNotFound from "../components/PageNotFound";
-import listItems from "../components/listItems"
-import UseRefHook from "../Hooks/UseRefHook";
 import ReactHook from "../Hooks/ReactHook";
-import UseStateHooks from "../Hooks/UseStateHooks";
-import MainDashBoard from "../layout/MainDashBoard";
 import UseEffectHook from "../Hooks/UseEffectHook";
-import Dashboard from "../components/Dashboard";
-import HoverCounterComp from "../components/HoverCounterComp"
-import ToggleImgComp from "../Tasks/ToggleImgComp"
-import ToggleMultiImgComp from "../Tasks/ToggleMultiImgComp"
+import UseStateHooks from "../Hooks/UseStateHooks";
+import ToggleImgComp from "../Tasks/ToggleImgComp";
+import ToggleMultiImgComp from "../Tasks/ToggleMultiImgComp";
 import Chart from "../components/Chart";
+import ClickCounterComp from "../components/ClickCounterComp";
+import Dashboard from "../components/Dashboard";
+import HoverCounterComp from "../components/HoverCounterComp";
+import MyImagesComp from "../components/MyImagesComp";
+import MySliderComp from "../components/MySliderComp";
+import PageNotFound from "../components/PageNotFound";
+import ParentComp from "../components/ParentComp";
+import VirtualDomComp from "../components/VirtualDomComp";
+import MainDashBoard from "../layout/MainDashBoard";
+import FormValComp from "../components/FormValComp";
 
 const router = createBrowserRouter([
   {
@@ -82,7 +83,9 @@ const router = createBrowserRouter([
                       { path: "usestate", element: <UseStateHooks /> },
                       { path: "useeffect", element: <UseEffectHook /> },
                     ],
-                  },
+                  },,{
+                    path:"virtualdom",element:<VirtualDomComp/>
+                  }
 
 
 
@@ -119,6 +122,10 @@ const router = createBrowserRouter([
           }
           ,{
             path:"togglemulti",element:<ToggleMultiImgComp/>
+          },{
+            path:"virtualdom",element:<VirtualDomComp/>
+          },,{
+            path:"formval",element:<FormValComp/>
           }
 
 

@@ -1,6 +1,6 @@
+import { Button } from '@mui/material'
 import React, { Component } from 'react'
 import { HOCComp } from './HOCComp'
-import { Button } from '@mui/material'
 
 export  class ClickCounterComp extends Component {
   

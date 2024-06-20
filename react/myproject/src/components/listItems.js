@@ -1,14 +1,12 @@
-import * as React from 'react';
+import BarChartIcon from '@mui/icons-material/BarChart';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import LayersIcon from '@mui/icons-material/Layers';
+import PeopleIcon from '@mui/icons-material/People';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import ListSubheader from '@mui/material/ListSubheader';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import PeopleIcon from '@mui/icons-material/People';
-import BarChartIcon from '@mui/icons-material/BarChart';
-import LayersIcon from '@mui/icons-material/Layers';
-import AssignmentIcon from '@mui/icons-material/Assignment';
+import * as React from 'react';
 import { Link } from 'react-router-dom';
 
 
@@ -97,6 +95,24 @@ export const mainListItems = (
         <LayersIcon />
       </ListItemIcon>
       <ListItemText primary="Multi Toggle" />
+      </Link>
+    </ListItemButton>
+    <ListItemButton>
+    <Link to="virtualdom" style={{display:"inherit",color: 'inherit', textDecoration: 'inherit'}}>
+
+      <ListItemIcon>
+        <LayersIcon />
+      </ListItemIcon>
+      <ListItemText primary="Virtual DOM" />
+      </Link>
+    </ListItemButton>
+    <ListItemButton>
+    <Link to="formval" style={{display:"inherit",color: 'inherit', textDecoration: 'inherit'}}>
+
+      <ListItemIcon>
+        <LayersIcon />
+      </ListItemIcon>
+      <ListItemText primary="Form Val" />
       </Link>
     </ListItemButton>
   </React.Fragment>
