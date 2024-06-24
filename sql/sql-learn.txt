@@ -1,0 +1,146 @@
+show databases - it list downs the database list
+create databse cdb - create database
+drop database cdb
+system cls
+
+
+create table tasks(
+
+)
+
+create table checklist(
+id int;
+task_id int,
+title varchar(255) not null,
+is_completed boolean not null Default false,
+primary key(id,task_id)
+)
+create table checklist(
+id int,
+task_id int,
+ title varchar(255) not null,
+is_completed boolean not null Default false,
+primary key(id,task_id),
+  references tasks(id)
+  
+  on update restrict
+  on delete cascade
+  
+  
+)
+
+
+alter table subscribers
+rename column id yo s_id
+
+rename tsbl subscribers to sub.
+
+
+
+
+
+#1
+
+create table IF NOT EXISTS movies (
+movies_id int ,
+movie_name varchar(50),
+movies_type varchar(50),
+movies_rating int ,
+primary key(movies_id,movies_name)
+)
+
+#2
+
+create table company (
+company_id primary key,
+trade varchar(50) not null,
+number_of_employees int not null default 0
+)
+
+#3
+
+create table job_offer(
+offer_id primary key,
+offer_title varchar(50) default "",
+offer_min_salary int default 5000 CHECK (offer_min_salary>=5000),
+offer_max_salary int default null,
+company_id int,
+foreign key(company_id)
+references company(company_id)
+)
+
+#4
+
+ALTER TABLE movies RENAME TO movies_renamed;
+
+#5
+ALTER TABLE movies_renamed
+ADD COLUMN movie_director VARCHAR(50)
+
+#6
+
+create table new_movies_table (
+ID int,
+movies_id int ,
+movies_name varchar(50),
+movies_type varchar(50),
+movies_rating VARCHAR(3) ,
+movie_director VARCHAR(50),
+primary key(movies_id,movies_name)
+)
+
+DROP TABLE movies_renamed
+
+ALTER TABLE new_movies_table RENAME TO movies_renamed
+
+#7
+
+ALTER TABLE movies_renamed 
+ADD movie_description VARCHAR(50) AFTER movie_name
+
+#8
+
+ALTER TABLE movies_renamed
+ALTER COLUMN movies_rating INT
+
+#9
+ALTER TABLE movies_renamed
+DROP COLUMN movie_director
+
+#10
+ALTER TABLE movies_renamed
+DROP PRIMARY KEY
+
+#11
+ALTER TABLE movies_renamed
+ADD CONSTRAINT pk_movies_id primary key(movies_id)
+
+#12
+
+ALTER TABLE company
+ADD CONSTRAINT fk_customer_id FOREIGN KEY (company_id)
+REFERENCES Company (company_id);
+
+
+
+
+create table tasks(
+task_id int auto_increment primary key,
+title varchar(255) not null,
+start_date DATE,
+due_dae DATE,
+priority tinyint not null default 3,
+description text
+)
+
+insert into tasks(title,priority) values ('Learn MYSQL',1)
+insert into tasks values(2,'insert statement without column','2024-06-01','2024-06-02',2,'the sequence should be maintained when are using the insert \n without specifying the column names')
+
+insert into tasks(title,start_date,due_date) values ("Insert using current_date in the tasks",
+current_date(),current_date()+1) 
+
+insert into tasks (title,priority)
+values ('do study',1),
+('do requirement gathering',1),
+('prepare srs',2),
+('signoff requirements',3)
