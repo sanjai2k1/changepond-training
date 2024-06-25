@@ -144,3 +144,140 @@ values ('do study',1),
 ('do requirement gathering',1),
 ('prepare srs',2),
 ('signoff requirements',3)
+
+
+#-----------------------------25/6/2024
+ select firstname,lastname from employees;
+
+-display fullname
+
+select firstname+" "+lastname from employees; //oracle will work 
+select concat(firstname," ",lastname) from employees;
+
+//with alias
+select concat(firstname," ",lastname) as FullName from employees;
+
+select now() => cureent date and time
+
+select current_Date();
+select current_Time();
+
+// to check user
+
+select current_user();
+
+//order by
+
+ select officecode,city,phone from offices order by city;
+
+
+ select city,country,phone,officecode from offices order by country desc,city desc;
+
+//limit 
+select orderNumber,priceEach,priceeach from orderdetails limit 10;
+
+// display first 10 orders
+ select orderNumber,quantityordered,priceeach,priceeach*quantityordered "totalprice" from orderdetails limit 10;
+
+
+select orderNumber,quantityordered,priceeach,priceeach*quantityordered "totalprice" from orderdetails order by priceeach*quantityordered limit 10;
+
+
+//display  order by asc
+select orderNumber,quantityordered,priceeach,priceeach*quantityordered "totalprice" from orderdetails order by priceeach*quantityordered asc limit 10;
+
+
+//display Distinct
+ select Distinct status from orders;
+
+
+select ordernumber,status from orders where status = "In Process";
+
+// order by field
+
+select ordernumber,status from orders order by field(
+status,
+'In Process',
+'On Hold',
+'Cancelled',
+'Resolved',
+'Disputed',
+'Shipped'
+) limit 20;
+
+
+// filtering can be achieved in rdbms using where clause
+ select * from orders where status = 'In Process';
+
+// filtering and order by
+
+select ordernumber,orderdate,status from orders where status = 'in Process' order by orderdate desc;
+
+
+//dsiplay all job title who has title sales rep 
+
+ select firstname,lastname,jobtitle from employees where jobtitle = 'Sales Rep';
+
+
+// display employess with prresdident or vp sales;
+select firstname,lastname ,jobtitle from employees where jobtitle in ('President','VP Sales');
+
+
+select firstname,lastname ,jobtitle from employees where jobtitle in ('President','VP Sales','Sales Rep') and reportsto = 1143;
+
+
+select firstname,lastname ,jobtitle,reportsto from employees where jobtitle in ('President','VP Sales','Sales Rep') and (reportsto = 1143 or reportsto is null);
+
+
+select firstname,lastname ,jobtitle,reportsto from employees where jobtitle in ('President','VP Sales','Sales Rep') and reportsto is not null;
+
+sorting
+order by,asc desc,fields
+Limit,
+where :
+comparison operators: = ,>,<,>=,<=,!=
+logical operators : and,or,not
+other operators : in,not in,is null,is not null,like ,not like,between
+
+
+-display products whose nae starts with america
+
+select productname from products where productname like 'A%';
+ select productname from products where productname like 'America%';
+
+
+select firstname,lastname from employees where firstname like 'J%';
+
+-display start and end with
+ select firstname,lastname from employees where firstname like 'M%n';
+ 
+ 
+ select firstname,lastname from employees where firstname like '__r_r%';
+ select firstname,lastname from employees where firstname like '__rr%';
+ select firstname,lastname from employees where firstname like '__r%';
+ select firstname,lastname from employees where firstname like '__d';
+ select firstname,lastname from employees where firstname not like '%y';
+ 
+ //escape sequence
+ select productname,productcode from products where productcode like '%\_20%';
+ 
+ select productcode,productname,buyprice from products where buyprice between 90 and 100;
+  select productcode,productname,buyprice from products where buyprice not between 90 and 100;
+ 
+ select ordernumber,requireddate,status from orders limit 20;
+ 
+ select ordernumber,requireddate,status from orders where status in ('Shipped','In Proccess') and requireddate between '2003-01-01' and '2003-03-03';
+ 
+ -Find the tp 5 customers based on their credit limit;
+ select customerName,creditLimit from customers order by creditLimit desc limit 5;
+ select customername,city from customers order by city desc limit 6,0;
+  select customername,city from customers order by city desc limit 6,40;
+ 
+ select count(*) from customers;
+ select productcode ,max(quantityordered),avg(quantityordered),count(productcode) from orderdetails group by productcode limit 20;
+ 
+ select productcode,priceeach,max(quantityordered) MQuantity,
+ min(quantityordered) MinQuantity,
+ avg(quantityordered) Total_count
+ from orderdetails
+ group by productcode,priceeach having count(productcode)>4 limit 20;

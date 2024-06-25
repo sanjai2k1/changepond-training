@@ -1,0 +1,50 @@
+ //1
+ select department_id,sum(salary) from employee group by department_id;
+ 
+ //2
+ select department_id,sum(salary) as total from employee group by department_id order by total desc;
+ 
+ //3
+ 
+ select department_id,max(salary) as total from employee group by department_id order by total asc;
+ 
+ //4
+ 
+ select department_id,min(salary) as total from employee group by department_id order by total asc;
+ 
+ //5
+ select department_id,sum(salary) as total from employee group by department_id having total >= 800000 order by total desc;
+ 
+ //6
+ select first_name,last_name,job_id,salary from employee where first_name like 's%';
+ 
+ 
+ //7
+ 
+  select * from employee order by salary desc limit 1;
+  
+  //8 
+  select * from employee order by salary desc limit 1,1;
+  
+  //9
+ select count(employee_id),year(hire_date) from employee group by year(hire_date);
+ 
+ //10
+ select * from employee where first_name like 'an%';
+ 
+ //11
+ select *  from employee where year(hire_date)=1994 and month(hire_date)=8;
+ 
+ //12
+ select * from employee order by salary asc limit 5;
+ 
+ //13
+ select *  from employee where year(hire_date) like '__8_';
+ 
+ //14
+ 
+ select *  from employee where day(hire_date)>=15;
+ //15
+  select count( *) from employee where commission_pct is null;
+  
+  //16
