@@ -281,3 +281,227 @@ select firstname,lastname from employees where firstname like 'J%';
  avg(quantityordered) Total_count
  from orderdetails
  group by productcode,priceeach having count(productcode)>4 limit 20;
+ 
+ 
+ 
+ // 26/6/2024
+ select productcode,productname,textDescription
+ from products p
+inner join productlines pl
+on p.productline = pl.productline; 
+ 
+ 
+select employee_id,first_name,last_name,department_name
+from departments d
+inner join employee e
+on d.department_id = e.department_id; 
+ 
+ 
+ select o1.ordernumber,o1.status,
+ sum(quantityordered*priceeach) totalprice
+ from orders o1
+ inner join orderdetails o2
+ on o1.ordernumber=o2.ordernumber
+ group by o1.ordernumber
+ limit 10;
+ 
+ 
+ select customerNumber,customerName,ordernumber,orderdate ,productname,quantityordered,priceeach
+ from customers
+ inner join orders using(customerNumber)
+ inner join orderdetails using(ordernumber)
+ inner join products using(productcode)
+ order by ordernumber,orderlinenumber limit 10;
+ 
+ select customerNumber,customerName,ordernumber,orderdate ,productname,quantityordered,priceeach
+ from orders
+ inner join orderdetails using(ordernumber)
+ inner join products using(productcode)
+ inner join customers using(customerNumber)
+ order by ordernumber,orderlinenumber limit 10;
+ where customerName like 'A%'
+ and quantityordered >50;
+ 
+ 
+ 
+ 
+ select customerNumber,customerName,ordernumber,orderdate ,productname,sum(quantityordered*priceeach)
+ from orders 
+ inner join orderdetails using(ordernumber)
+ inner join products using(productcode)
+ inner join customers using(customerNumber)
+group by customers.customerNumber,customers.customerName,orders.orderNumber,orders.orderdate,products.productname;
+
+ select c.customernumber,customername,ordernumber,status from customers c
+ left join orders o
+ on c.customernumber = o.customername
+ where orderNumber is null
+ order by orderNumber desc;
+ 
+ 
+ select c.customernumber,customername,ordernumber,status from customers c
+ left join orders o
+ on c.customernumber = o.customernumber
+ and ordernumber = 10123;
+ 
+ select employeenumber,customerNumber
+ from customers
+ right join employees
+ on salesrepemployeenumber = employeenumber;
+ order by salesrepemployeenumber desc;
+ 
+ 
+ 
+ select concat(M.firstName,M.lastName) as "Manager" ,
+ concat (E.firstName,E.lastName) as "employee"
+ from employees M
+ inner join employees E
+ on E.reportsto = M.employeenumber
+ order by Manager;
+ 
+ 
+ 
+  select max(items),min(items),floor(avg(items)) from (select ordernumber,count(ordernumber)as items from orderdetails group by ordernumber)as lineitems;
+  select * from employee where employee.salary > (select avg(salary) from employee );
+ 
+ select productname,buyprice,productline from products p1 where buyprice >(select avg(buyprice) from products where productline = p1.productline) order by productline;
+ 
+ 
+select customername,customernumber from customers where exists ( select ordernumber,sum(priceeach*quantityordered) total from orderdetails inner join orders using (ordernumber) where customernumber = customers.customernumber group by ordernumber having sum(priceeach*quantityordered)>60000);
+ 
+
+select customerName from  
+ (select customernumber,round(sum(quantityordered*priceeach)) sales,
+(case 
+		when sum(quantityordered*priceeach) <10000 then 'Silver'
+		when sum(quantityordered*priceeach) between 10000  and 100000 then 'Gold'
+		when sum(quantityordered*priceeach)>100000 then 'Platinum'
+		end ) customergroup
+ from orderdetails
+ inner join orders using(ordernumber) where year(shippeddate) = 2003
+ group by customernumber
+ limit 20) top20customers2003
+ inner join customers using(customerNumber);
+ 
+ 
+ 
+ 
+ select customername from customers where customernumber not in (select distinct customernumber from orders);
+ //1
+ select e.employee_id,e.manager_id,e.salary from employee e inner join employee m on e.employee_id = m.manager_id;
+ 
+ //2
+ select count(*),manager_id from employee group by manager_id order by(count(*)) desc;
+ 
+ //3
+ select departments.department_id,count(*) from departments inner join employee on departments.department_id = employee.department_id group by departments.department_id ;
+ 
+ //4
+ select * from employee where employee.salary > (select avg(salary) from employee );
+ 
+ 
+ //5
+ select department_id,department_name,max(employee.salary) from employee inner join departments using (department_id) group by (department_id) order by max(employee.salary);
+ 
+ //6
+ 
+
+ 
+  SELECT manager_id, GROUP_CONCAT(employee_id ORDER BY employee_id) AS employees
+ FROM employee
+ GROUP BY manager_id
+ ORDER BY manager_id;
+ 
+ SELECT m.manager_id, concat(m.first_name,m.last_name), GROUP_CONCAT(e.employee_id ORDER BY e.employee_id) AS employees
+FROM employee e
+JOIN employee m ON e.manager_id = m.manager_id
+GROUP BY m.manager_id, concat(m.first_name,m.last_name)
+ORDER BY m.manager_id;
+
+ 
+ update employee 
+ set commission_pct = 25
+ where department_id = (
+ select department_id from departments where
+ department_name = 'IT'
+ );
+ 
+ 
+ delete from tasks 
+ where start_date is null
+ and due_date is null
+ and priority =2;
+ 
+ 
+ delete from tasks;
+ 
+ rollback;
+ 
+ truncate table tasks;
+ 
+ 
+select concat(first_name," ",last_name) fullname from employee;
+
+select upper(first_name),lower(first_name) from employee;
+
+select left(job,2) from employee;
+select right(job,3) from employee;
+
+select length(first_name) from employee;
+
+select reverse(first_name) from employee;
+ 
+select reverse(first_name) from employee;
+
+select length(productname),productname,substr(productname,3,4) from products limit 10;
+ 
+ 
+ select productname,substr(productname,-3,2) from products;
+ 
+ INSERT INTO Student 
+VALUES
+(1001, 'AKSHRA AGARWAL', 'FEMALE', 70.00, 11, 'A', 'Science', '1996-11-10'),
+(1002, 'ANJANI SHARMA', 'FEMALE', 75.00, 11, 'A', 'Commerce', '1996-09-18'),
+(1003, 'ANSHUL SAXENA', 'MALE', 78.00, 11, 'A', 'Commerce', '1996-11-19'),
+(1004, 'AISHWARYA SINGH', 'FEMALE', 79.00, 11, 'A', 'Commerce', '1996-01-11'),
+(1005, 'AKRITI SAXENA', 'FEMALE', 76.00, 11, 'A', 'Commerce', '1996-09-20'),
+(1006, 'KHUSHI AGARWAL', 'FEMALE', 77.00, 11, 'A', 'Commerce', '2003-09-14'),
+(1007, 'MAAHI AGARWAL', 'FEMALE', 74.00, 11, 'A', 'Science', '1997-04-21'),
+(1008, 'MITALI GUPTA', 'FEMALE', 78.00, 12, 'A', 'Science', '1997-11-26'),
+(1009, 'NIKUNJ AGARWAL', 'MALE', 58.00, 12, 'A', 'Science', '1997-07-12'),
+(1010, 'PARKHI', 'FEMALE', 59.00, 12, 'A', 'Commerce', '1997-12-20'),
+(1011, 'PRAKHAR TIWARI', 'MALE', 43.00, 12, 'A', 'Science', '1997-04-22'),
+(1012, 'RAGHAV GANGWAR', 'MALE', 58.00, 12, 'A', 'Commerce', '1997-12-21'),
+(1013, 'SAHIL SARASWAT', 'MALE', 57.00, 12, 'A', 'Commerce', '1997-08-13'),
+(1014, 'SWATI MISHRA', 'FEMALE', 98.00, 11, 'A', 'Science', '1996-08-13'),
+(1015, 'HARSH AGARWAL', 'MALE', 58.00, 11, 'B', 'Science', '2003-08-28'),
+(1016, 'HARSHIT KUMAR', 'MALE', 98.00, 11, 'B', 'Science', '2003-05-22'),
+(1017, 'JAHANVI KAPOOR', 'MALE', 65.00, 11, 'B', 'Science', '1997-01-10'),
+(1018, 'STUTI MISHRA', 'MALE', 66.00, 11, 'C', 'Commerce', '1996-01-10'),
+(1019, 'SURYANSH KUMAR AGARWAL', 'MALE', 85.00, 11, 'C', 'Commerce', '2007-08-22'),
+(1020, 'TANI RASTOGI', 'FEMALE', 75.00, 12, 'C', 'Commerce', '1998-01-15'),
+(1021, 'TANISHK GUPTA', 'MALE', 55.00, 12, 'C', 'Science', '1998-04-11'),
+(1022, 'TANMAY AGARWAL', 'MALE', 57.00, 11, 'C', 'Commerce', '1998-06-28'),
+(1023, 'YASH SAXENA', 'MALE', 79.00, 11, 'C', 'Science', '1998-03-13'),
+(1024, 'YESH DUBEY', 'MALE', 85.00, 12, 'C', 'Commerce', '1998-04-03');
+ 
+ 
+ 
+ 
+ //tasks
+ 
+ select ename,sal from employee where sal >= 2200;
+  select * from employee where comm is null;
+   SELECT *FROM Employee WHERE Sal NOT BETWEEN 2500 AND 4000;
+   select * from employee where mgr is null;
+   select * from employee where ename like '__A%';
+   select * from employee where ename like '%T';
+    select * from employee where ename like 'M_L%';
+	 select empno,ename,job,mgr,hiredate,sal,case
+    when comm is null then 'not given'
+    else comm
+    end
+    ,deptno from employee;
+ 
+  
+ 
