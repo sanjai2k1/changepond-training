@@ -1,0 +1,10 @@
+Delimiter $$
+create procedure getCustomers()
+begin
+select customerName as cname,concat(city,' ',state,' ',postalcode,' ',country)
+from customers
+order by customerName;
+end $$
+delimiter ;
+
+
