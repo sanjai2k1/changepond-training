@@ -123,6 +123,17 @@ print(student_name[0:3])
 
 
 
+nested_tuple = (['subham','ketan'],[21,22],(True,False))
+
+print(nested_tuple[0])
+print(nested_tuple[0][0])
+print(nested_tuple[0][1])
+print(nested_tuple[1])
+print(nested_tuple[1][0])
+print(nested_tuple[1][1])
+print(nested_tuple[2])
+print(nested_tuple[2][0])
+print(nested_tuple[2][1])
 
 
 
