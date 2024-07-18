@@ -1,0 +1,10 @@
+#Data Types
+1 numeric data type
+2 sequence data type : list,tuple and string
+3 bolean
+4 set
+5 dictionary
+
+List :
+collection of homogenous,heterogenous
+enclosed in[] - square bracket
