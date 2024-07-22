@@ -58,7 +58,6 @@ users={
 
 for i in users:
     print(f'firstname : {users[i]['firstname']} lastname : {users[i]['lastname']} Location : {users[i]['Location']}')
-
 print(users['kastubag']['firstname'])
 print(users['prajbag'].get('Location'))
 
