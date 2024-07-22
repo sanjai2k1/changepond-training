@@ -23,12 +23,12 @@ create table courses (
 );
 
 
-CREATE TABLE enrollment (
+create table enrollment (
     enrollment_id INTEGER UNIQUE PRIMARY KEY,
     student_id INTEGER,
     course_id INTEGER,
-    CONSTRAINT fk_student FOREIGN KEY (student_id) REFERENCES students(student_id),
-    CONSTRAINT fk_course FOREIGN KEY (course_id) REFERENCES courses(course_id)
+    constraint fk_student foreign key (student_id) REFERENCES students(student_id),
+    constraint fk_course foreign key (course_id) REFERENCES courses(course_id)
 );
 
 
@@ -56,12 +56,12 @@ insert into students values(7,'sanjai j',22,'sanjai2k1j@gmail.com',80,100,NULL);
 
 
 
-select * from students where student_id in (
+select student_name from students where student_id in (
 select student_id from enrollment  where course_id = ( 
 select course_id from courses where course_name = 'Next.js'));
 
-UPDATE students
-SET status = 'Awarded'
+update students
+set status = 'Awarded'
 WHERE student_id = (
     SELECT student_id
     FROM students
@@ -74,7 +74,7 @@ WHERE student_id = (
 
 select * from students limit 2 offset 2 rows;
 
-select courses.course_id,COUNT(enrollment.student_id) from courses inner join enrollment using (course_id) group by courses.course_id order by courses.course_id;
+select courses.course_name,COUNT(enrollment.student_id) from courses inner join enrollment using (course_id) group by courses.course_id order by courses.course_id;
 
 
 SELECT courses.course_name, COUNT(enrollment.student_id) AS student_count
@@ -92,4 +92,4 @@ select distinct(course_id) from courses inner join enrollment using(course_id))
 ;
 
 select avg(age) as average_age from students;
-select * from students where email like '%example.com';
+select student_name from students where email like '%example.com';
