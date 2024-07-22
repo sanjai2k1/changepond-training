@@ -1,0 +1,12 @@
+#while 
+while loop is used to execute a block of statements repeatedly untill a given condition is statisfied
+-> when the condition becomes false,the line imediately after the loopin the given program is executed.
+
+#syntax:
+while (expression):
+    loop body
+
+range() -> number of sequence
+start -> default 0
+stop -> excluded
+step -> default 1
