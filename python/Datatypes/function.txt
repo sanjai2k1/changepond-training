@@ -1,0 +1,9 @@
+# function:
+# -> a function is a block of code that performs a specific task
+# -> functions are reusable pieces of programs
+# -> they allows you to give a name to a block of statement,allowing you to run that block using specified name anywhere
+# in your program and any number of times
+# -> the names given in the function definition are called paramaters
+# whereas the values you supply in the function call are arguments
+# -> you define a function with def keyword, then write identifier(name) followed by parantheses and a colon
+-> return -> used to exit from a function and go back to the function caller and return the specified value
