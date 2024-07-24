@@ -1,12 +1,66 @@
 <p>directives works!</p>
 
 <h2 *ngIf = "isCondition">Output of *ngIf Directive</h2>
-<div *ngIf = "hasValue then truepart else falsepart"></div>
+<div *ngIf = "hasValue then thuepart else falsepart"></div>
 
 
-<ng-template #truepart>
+<ng-template #thuepart>
 <strong>Admin Login successfully</strong> <br>
 </ng-template>
 <ng-template #falsepart>
 <strong>User Login successfully</strong>
 </ng-template>
+
+
+<hr>
+
+<!-- use of *ngfor -->
+
+<ul>
+    <li *ngFor="let course of frontend" (click)="greeting($event)">{{course}}</li>
+</ul>
+<p>your selected course is : {{selectedcourse}}</p>
+<table>
+    <thead>
+        <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>post</th>
+    <th>company</th>
+</tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let emp of employee">
+            <td>{{employee.indexOf(emp)+1}}</td>
+            <td>{{emp.id}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.post}}</td>
+            <td>{{emp.company}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<!-- use of *ngSwitchCase -->
+
+<div [ngSwitch]="selectedCourse">
+    <div *ngSwitchCase="'HTML'">You Have Selected HTML</div>
+    <div *ngSwitchCase="'CSS'">You Have Selected CSS</div> 
+    <div *ngSwitchCase="'Bootstrap'">You Have Selected Bootstrap</div> 
+    <div *ngSwitchCase="'Sass'">You Have Selected Sass</div> 
+    <div *ngSwitchCase="'Javascript'">You Have Selected Javascript</div> 
+    <div *ngSwitchCase="'React'">You Have Selected React</div> 
+    <div *ngSwitchCase="'Angular'">You Have Selected Angular</div> 
+    <div *ngSwitchDefault>Invalid Choice</div> 
+
+
+</div>
+<hr>
+<div [ngSwitch]="selectedCourse">
+    <div *ngFor = "let course of courses">
+    <div *ngSwitchCase="course">You Have Selected {{course}}</div>
+</div>
+<div *ngSwitchDefault>Invalid Choice</div> 
+
+</div>
