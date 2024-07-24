@@ -1,9 +1,10 @@
-def main():
-    size=int(input("enter size : "))
-    lst=[i**2 for i in range (size+1)]
-    print(lst)
+new_list = [i for i in range(1,11)]
+print('list comprehension :',new_list)
 
+new_list = [i for i in range(1,11) if i%2==0]
+print('list comphrehension : ',new_list)
 
-
-if __name__ == "__main__":
-    main()
+vowels = ['a','e','i','o','u']
+name="sanjai"
+withoutvowels = [i for i in name if i not in vowels]
+print(withoutvowels)
