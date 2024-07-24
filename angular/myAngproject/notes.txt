@@ -1,0 +1,20 @@
+ng g c componentname
+
+*Databinding : accessing or getting data from one file to another in same component
+
+1.interpolation {{}}:ts => html
+2.property binding []: ts => html (but here we set attribute value)
+3.event binding (): html => ts 
+4.two ways data binding [()]: ts <=> html (for this we use ngModel is not part of core module its part of core module its part ) 
+
+
+
+Directives : it is used to change DOM layout as well as change apperance and behaviour of it.
+1.structural directive: it is use to change dom element layout
+- we can start structural directive name with astric symbol
+*ngIF,*ngFor,*ngSwitchCase
+2.attribute directives:
+3.custom directive:
+
+
+ng-template : it is use to display based on condition

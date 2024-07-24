@@ -1,0 +1,12 @@
+<p>directives works!</p>
+
+<h2 *ngIf = "isCondition">Output of *ngIf Directive</h2>
+<div *ngIf = "hasValue then truepart else falsepart"></div>
+
+
+<ng-template #truepart>
+<strong>Admin Login successfully</strong> <br>
+</ng-template>
+<ng-template #falsepart>
+<strong>User Login successfully</strong>
+</ng-template>
