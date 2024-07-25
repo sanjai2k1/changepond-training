@@ -11,3 +11,16 @@
  -> Lambda Function(Anonoymous Function) -> function without a name
     -> this function can take any number of arguments but only one expression , which is evaluated and returned             
                                          syntax : lambda arguments : expression 
+
+
+map() function returns a map object (which is an iterator )of the results 
+
+after applying the given function to each item of a given iterable(list,tuple etc)
+or allows you to process and transform all the items in an iterable 
+without using an exlplicit for loop,a technique commonoly known as mapping
+
+syntax:
+map(function,iterable ,[iterable1,iterable2....])
+
+
+
