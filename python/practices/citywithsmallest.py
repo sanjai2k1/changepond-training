@@ -1,8 +1,7 @@
 def paths(graph,visited,ind):
-    
+    visited[ind]=True
     for i in graph[ind]:
-        if not visited[i]:
-            visited[i]=True
+        if not visited[visited.index(i)]:
             paths(graph,visited,i)
     
     
