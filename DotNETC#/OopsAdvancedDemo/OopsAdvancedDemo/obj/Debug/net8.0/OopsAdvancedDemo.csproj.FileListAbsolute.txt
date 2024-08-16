@@ -1,0 +1,14 @@
+C:\Users\sanjai.j\source\repos\OopsAdvancedDemo\OopsAdvancedDemo\bin\Debug\net8.0\OopsAdvancedDemo.exe
+C:\Users\sanjai.j\source\repos\OopsAdvancedDemo\OopsAdvancedDemo\bin\Debug\net8.0\OopsAdvancedDemo.deps.json
+C:\Users\sanjai.j\source\repos\OopsAdvancedDemo\OopsAdvancedDemo\bin\Debug\net8.0\OopsAdvancedDemo.runtimeconfig.json
+C:\Users\sanjai.j\source\repos\OopsAdvancedDemo\OopsAdvancedDemo\bin\Debug\net8.0\OopsAdvancedDemo.dll
+C:\Users\sanjai.j\source\repos\OopsAdvancedDemo\OopsAdvancedDemo\bin\Debug\net8.0\OopsAdvancedDemo.pdb
+C:\Users\sanjai.j\source\repos\OopsAdvancedDemo\OopsAdvancedDemo\obj\Debug\net8.0\OopsAdvancedDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sanjai.j\source\repos\OopsAdvancedDemo\OopsAdvancedDemo\obj\Debug\net8.0\OopsAdvancedDemo.AssemblyInfoInputs.cache
+C:\Users\sanjai.j\source\repos\OopsAdvancedDemo\OopsAdvancedDemo\obj\Debug\net8.0\OopsAdvancedDemo.AssemblyInfo.cs
+C:\Users\sanjai.j\source\repos\OopsAdvancedDemo\OopsAdvancedDemo\obj\Debug\net8.0\OopsAdvancedDemo.csproj.CoreCompileInputs.cache
+C:\Users\sanjai.j\source\repos\OopsAdvancedDemo\OopsAdvancedDemo\obj\Debug\net8.0\OopsAdvancedDemo.dll
+C:\Users\sanjai.j\source\repos\OopsAdvancedDemo\OopsAdvancedDemo\obj\Debug\net8.0\refint\OopsAdvancedDemo.dll
+C:\Users\sanjai.j\source\repos\OopsAdvancedDemo\OopsAdvancedDemo\obj\Debug\net8.0\OopsAdvancedDemo.pdb
+C:\Users\sanjai.j\source\repos\OopsAdvancedDemo\OopsAdvancedDemo\obj\Debug\net8.0\OopsAdvancedDemo.genruntimeconfig.cache
+C:\Users\sanjai.j\source\repos\OopsAdvancedDemo\OopsAdvancedDemo\obj\Debug\net8.0\ref\OopsAdvancedDemo.dll

@@ -1,0 +1,14 @@
+C:\Users\sanjai.j\source\repos\GenericsDemo\GenericsDemo\bin\Debug\net8.0\GenericsDemo.exe
+C:\Users\sanjai.j\source\repos\GenericsDemo\GenericsDemo\bin\Debug\net8.0\GenericsDemo.deps.json
+C:\Users\sanjai.j\source\repos\GenericsDemo\GenericsDemo\bin\Debug\net8.0\GenericsDemo.runtimeconfig.json
+C:\Users\sanjai.j\source\repos\GenericsDemo\GenericsDemo\bin\Debug\net8.0\GenericsDemo.dll
+C:\Users\sanjai.j\source\repos\GenericsDemo\GenericsDemo\bin\Debug\net8.0\GenericsDemo.pdb
+C:\Users\sanjai.j\source\repos\GenericsDemo\GenericsDemo\obj\Debug\net8.0\GenericsDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sanjai.j\source\repos\GenericsDemo\GenericsDemo\obj\Debug\net8.0\GenericsDemo.AssemblyInfoInputs.cache
+C:\Users\sanjai.j\source\repos\GenericsDemo\GenericsDemo\obj\Debug\net8.0\GenericsDemo.AssemblyInfo.cs
+C:\Users\sanjai.j\source\repos\GenericsDemo\GenericsDemo\obj\Debug\net8.0\GenericsDemo.csproj.CoreCompileInputs.cache
+C:\Users\sanjai.j\source\repos\GenericsDemo\GenericsDemo\obj\Debug\net8.0\GenericsDemo.dll
+C:\Users\sanjai.j\source\repos\GenericsDemo\GenericsDemo\obj\Debug\net8.0\refint\GenericsDemo.dll
+C:\Users\sanjai.j\source\repos\GenericsDemo\GenericsDemo\obj\Debug\net8.0\GenericsDemo.pdb
+C:\Users\sanjai.j\source\repos\GenericsDemo\GenericsDemo\obj\Debug\net8.0\GenericsDemo.genruntimeconfig.cache
+C:\Users\sanjai.j\source\repos\GenericsDemo\GenericsDemo\obj\Debug\net8.0\ref\GenericsDemo.dll
