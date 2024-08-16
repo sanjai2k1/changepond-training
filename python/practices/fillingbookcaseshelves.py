@@ -44,10 +44,10 @@ books = [[1,1],[2,3],[2,3],[1,1],[1,1],[1,1],[1,2]]
 shelfWidth = 4
 shelves=[]
 
-dp=[[-1 for j in range(len(books))]for i in range(len(books))]
+dp=[[]for i in range(len(books))]
 
 for i in range(0,len(books)):
-    dp[i][i]=books[i][0]
+    dp[i].append(books[i][1])
 
 # [print(i) for i in dp]
 ind=0
@@ -57,25 +57,26 @@ for i in range(0,len(books)):
     # print(w)
     for j in range(i+1,len(books)):
         if books[j][0]<=w:
-            dp[i][j]=books[j][0]
+            dp[i].append(books[j][1])
             w-=books[j][0]
         else:
             break
     else:
         break
     ind+=1
-    
-print(ind)
-
-for i in range(0,ind+1):
-    for j in range(len(books)):
-        if dp[i][j]==-1:
-            break
-        else:
-            
-            
-        
-    
+dp=dp[:ind+1]
+# print(ind)
 
 [print(i) for i in dp]
+            
+            
+# for i in dp:
+#     print(i[0],max(i),min(i))
+    
 
+
+
+# min -1 : 1 max -2 :3
+# min -2 : 3 max -2 :3
+# min -1 : 2 max -2 :3
+# min -1 : 4 max -1 :4
